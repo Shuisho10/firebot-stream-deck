@@ -16,7 +16,7 @@ body {
     height: 90vh;
     width: 7vw;
     overflow-y: scroll;
-    gap: 2px;
+    gap: 15px;
     padding: 10px;
     border-radius: 5px;
     border: 2px solid green;
@@ -79,25 +79,43 @@ body {
     position:relative;
     width:  90%;
     height: 90%;
-    border-radius: 70px;
+    border-radius: 40px;
     background-color: rgba(1,1,1,.5);
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     padding: 10px;
 }
 
-.button-grid > button {
+
+
+.dashboard-button {
+    cursor: pointer;
     background-color: #002200;
     border: 6px solid #22bb22;
     border-radius: 40px;
     color: green;
-    padding: 10px;
-    margin: 10px;
-    font-size: 30px;
-    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    white-space: normal;
+    font-size: 16px;
+    
 }
 
-.button-grid > button:hover {
+.truncate {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+           line-clamp: 2;
+   -webkit-box-orient: vertical;
+}
+.with-image{
+    background-image: url("/home/shuisho/Pictures/3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dashboard-button:hover {
     background-color: #b06060;
     border: 6px solid #ffcccc;
     color: #ffcccc;
