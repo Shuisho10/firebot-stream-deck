@@ -72,6 +72,7 @@ body {
     background-color: green;
     justify-content: center;
     align-items: center;
+    border: 2px solid #22ee22;
     border-radius: 20px;
 }
 
